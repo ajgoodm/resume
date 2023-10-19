@@ -57,7 +57,7 @@
 % Needed to make header & footer effeciently
 \RequirePackage{fancyhdr}
 % Needed to manage colors
-\RequirePackage{xcolor}
+\RequirePackage[dvipsnames]{xcolor}
 % Needed to use \ifxetex-\else-\fi statement
 \RequirePackage{ifxetex}
 % Needed to use \if-\then-\else statement
@@ -81,12 +81,10 @@
 % Needed to deal a paragraphs
 \RequirePackage{parskip}
 % Needed to deal hyperlink
-\RequirePackage[hidelinks,unicode]{hyperref}
+\RequirePackage[unicode]{hyperref}
 \hypersetup{%
-  pdftitle={},
-  pdfauthor={},
-  pdfsubject={},
-  pdfkeywords={}
+  colorlinks=True,
+  urlcolor=RoyalPurple
 }
 
 
