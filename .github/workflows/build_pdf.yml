@@ -37,8 +37,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Commit latest pdf
         run: |
-          cp ./src/resume.pdf
-          ./latest.pdf
+          cp ./src/resume.pdf ./latest.pdf
       - name: Commit latest build
         run: |
           git config --global user.name 'Aaron Aster'
