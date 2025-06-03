@@ -3,6 +3,8 @@ name: pdflatex
 on:
   push:
     branches: [ master, ajgoodm/publish-github-actions ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   build:
@@ -13,7 +15,7 @@ jobs:
       - name: Build
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: src/resume.tex
+          root_file: resume.tex
           working_directory: src
       - name: Copy
         run: |
