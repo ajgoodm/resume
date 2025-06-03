@@ -35,12 +35,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Commit latest pdf
-        run: |
-          cp ./src/resume.pdf ./latest.pdf
       - name: Commit latest build
         run: |
           git config --global user.name 'Aaron Aster'
           git config --global user.email 'ajgoodm@users.noreply.github.com'
-          git commit -am "latest resume automated build"
+          git add ./out/resume.pdf
+          git commit -m "latest resume automated build"
           git push
