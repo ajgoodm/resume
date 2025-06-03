@@ -17,7 +17,7 @@ jobs:
         with:
           root_file: resume.tex
           working_directory: src
-          compiler: lualatex
+          compiler: xelatex
       - name: Copy
         run: |
           mkdir out
