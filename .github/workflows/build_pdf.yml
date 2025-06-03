@@ -2,7 +2,7 @@ name: build-pdf
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, ajgoodm/build-change-compiler ]
   pull_request:
     branches: [ main ]
 
@@ -17,7 +17,7 @@ jobs:
         with:
           root_file: resume.tex
           working_directory: src
-          latexmk_use_xelatex: true
+          compiler: xelatex
       - name: Copy
         run: |
           mkdir out
