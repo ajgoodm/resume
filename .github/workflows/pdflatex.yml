@@ -7,21 +7,22 @@ on:
     branches: [ master, ajgoodm/publish-github-actions ]
 
 workflow_dispatch:
-  jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v4
-        - name: Build
-          uses: xu-cheng/latex-action@v3
-          with:
-            root_file: src/resume.tex
-        - name: Copy
-          run: |
-            mkdir out
-            cp ./resume.pdf ./out/resume.pdf
-        - uses: actions/upload-artifact@v4
-          with:
-            name: resume
-            path: out/resume.pdf
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: src/resume.tex
+      - name: Copy
+        run: |
+          mkdir out
+          cp ./resume.pdf ./out/resume.pdf
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resume
+          path: out/resume.pdf
