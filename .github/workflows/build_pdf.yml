@@ -2,7 +2,7 @@ name: build-pdf
 
 on:
   push:
-    branches: [ main, ajgoodm/build-change-compiler ]
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 
