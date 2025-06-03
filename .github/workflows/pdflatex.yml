@@ -2,11 +2,7 @@ name: pdflatex
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
     branches: [ master, ajgoodm/publish-github-actions ]
-
-workflow_dispatch:
 
 jobs:
   build:
