@@ -14,6 +14,7 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: src/resume.tex
+          working_directory: src
       - name: Copy
         run: |
           mkdir out
