@@ -1,8 +1,8 @@
-name: pdflatex
+name: build-pdf
 
 on:
   push:
-    branches: [ master, ajgoodm/publish-github-actions ]
+    branches: [ master ]
   pull_request:
     branches: [ master ]
 
