@@ -1,5 +1,8 @@
 name: build-pdf
 
+permissions:
+  contents: write
+
 on:
   push:
     branches: [ main ]
@@ -26,3 +29,13 @@ jobs:
         with:
           name: resume
           path: ./out/resume.pdf
+  
+  commit_latest:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Commit latest pdf
+        run: |
+          cp ./src/resume.pdf
+          ./latest.pdf
