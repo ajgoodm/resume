@@ -1,0 +1,28 @@
+name: build-pdf
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.tex
+          working_directory: src
+          latexmk_use_xelatex: true
+      - name: Copy
+        run: |
+          mkdir out
+          cp ./src/resume.pdf ./out/resume.pdf
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resume
+          path: ./out/resume.pdf
