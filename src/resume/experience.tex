@@ -42,13 +42,19 @@
         }
         \item {
             Maintained, updated, and documented a distributed (AWS Lambda, Batch) service 
-            that summarizes remote sensing observations over field geometries. Service scales elastically
-            to meet bursty loads, processing jobs with variable, high concurrency. The service supports
+            that summarizes remote sensing observations over field geometries. Service scaled elastically
+            to meet bursty loads, processing jobs with variable, high concurrency. The service supported
             arbitrary calculations across imagery bands (e.g vegetative indices from RGB and NIR bands of
-            \href{https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2}{Sentinel-2}
-            imagery) and produces spatial summary statistics, yielding time series collated
-            from hundreds of source images per area of interest. Service integrates with 25+ public
-            imagery products.
+            \href{https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2}{Sentinel-2})
+            and produced spatial summary statistics, yielding time series collated from hundreds of
+            source images per area of interest. Service integrated with 25+ public imagery products.
+        }
+        \item {
+            Designed and built an API for providing inferred agronomic activity for user-defined areas of interest.
+            The API served machine learning inferences and public reference data. Inferences were used for data entry
+            and validation in the user-facing front end of multiple sustainable agriculture programs.
+            Built the infrastructure to orchestrate model inference across many unique machine learning model cohorts,
+            persist the results, and gather the predictions into easily consumable API responses.
         }
       \end{cvitems}
     }
