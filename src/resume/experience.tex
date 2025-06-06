@@ -14,7 +14,7 @@
     {Staff Data Science Engineer (promoted in 2020 and 2022)} % Job title
     {Indigo Agriculture} % Organization
     {Boston, MA} % Location
-    {April 2022 -} % Date(s)
+    {April 2019 -} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {
@@ -22,36 +22,36 @@
             to power the monetization of sustainable agriculture. 
             Developed validation and imputation methodologies to 
             support the measuring, reporting, and verification of 
-            farming activity (25,000 fields, $>$2M acres or $\sim$2x the 
+            farming activity (38,500 fields, $>$2.5M acres or $\sim$2.5x the
             area of Rhode Island). Worked with soil 
             scientists, data scientists, and product owners / managers 
             to integrate software in a pipeline that generates 
             verified carbon credits from organic carbon sequestered in 
-            agricultural soils. Carbon program achieved 
-            5x and 3x year-over-year growth in its second 
-            and third credit issuances with monotonically increasing conversion 
-            rates. This work resulted in 
+            agricultural soils. This work resulted in 
             \href{https://patents.google.com/patent/US20230186408A1}{multiple} 
             \href{https://patents.google.com/patent/US20230078852A1}{patents}.
         }
         \item {
-            Team lead on a fledgling squad that developed the carbon credit
-            generation pipeline. Worked with squad to define intermediate and short-term
-            work planning processes that suited the fast-paced MVP
-            development required for a scrappy new product.
+            Maintained, updated, and documented a distributed (AWS Lambda, Batch) service 
+            that summarizes remote sensing observations over field geometries. Service scaled elastically
+            to meet bursty loads, processing jobs with variable, high concurrency. The service supported
+            arbitrary calculations across imagery bands (e.g vegetative indices from RGB and NIR bands of
+            \href{https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2}{Sentinel-2})
+            and produced spatial summary statistics, yielding time series collated from hundreds of
+            source images per area of interest. Service integrated with 25+ public imagery products.
         }
         \item {
-            Mentored junior engineers and guided career growth, overseeing two promotions to staff engineer.
+            Designed and built an API for providing inferred agronomic activity for user-defined areas of interest.
+            The API served machine learning inferences and public reference data. Inferences were used for data entry
+            and validation in the user-facing front end of multiple sustainable agriculture programs.
+            Built the infrastructure to orchestrate model inference across many unique machine learning model cohorts,
+            persist the results, and gather the predictions into easily consumable API responses.
         }
         \item {
-            Improved, documented, and maintained a distributed (AWS Lambda, Batch) service 
-            that summarizes remote sensing observations over field geometries. Service scales elastically to meet bursty loads, processing jobs with variable, high concurrency.
-            Distributed tasks implemented in Rust.
-        }
-        \item {
-            Designed and built a system to perform pairwise comparisons between thousands of 
-            bacterial genomes (>3M comparisons) using a map-reduce framework as part of the
-            biologicals team.
+            Acted as team lead on a new squad that developed the carbon credit generation pipeline
+            for one year. Worked with squad to define intermediate and short-term work planning processes.
+            Mentored junior engineers and fostered a supportive, inclusive environment with space for
+            team member growth.
         }
       \end{cvitems}
     }

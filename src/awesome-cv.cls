@@ -603,7 +603,7 @@
       \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
     \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
   \end{tabular*}%
-  \ifempty{#5}{\vspace{0.0mm}}{\vspace{2.0mm}}
+  \ifempty{#5}{\vspace{-4.0mm}}{\vspace{2.0mm}}
 }
 
 % Define an environment for cvsubentry
@@ -668,7 +668,7 @@
 
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
-  \vspace{-4.0mm}
+  \vspace{-3.5mm}
   \begin{justify}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
     \setlength{\parskip}{0pt}
@@ -676,7 +676,7 @@
 }{%
   \end{itemize}
   \end{justify}
-  \vspace{-4.0mm}
+  \vspace{-3.5mm}
 }
 
 
